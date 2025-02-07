@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects</title>
+  <!-- 구글 폰트 (Montserrat) 사용 -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+  <style>
+    /* 기본 리셋 */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Montserrat', sans-serif;
+      color: #333;
+      background: #fff;
+      line-height: 1.6;
+    }
+    
+    .container {
+      width: 90%;
+      max-width: 1800px;
+      margin: 0 auto;
+    }
+    
+    h2 {
+      border-bottom: 0.1rem solid gray;
+      line-height: 5rem;
+    }
+    
+    /* 네비게이션 */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.9);
+      border-bottom: 1px solid #eee;
+      z-index: 100;
+    }
+    
+    nav .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 0;
+    }
+    
+    nav .logo a {
+      text-decoration: none;
+      color: black;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+    
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+    
+    nav ul li {
+      margin-left: 30px;
+    }
+    
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+    
+    nav ul li a:hover {
+      color: #f0a500;
+    }
+    
+    /* Section 기본 스타일 */
+    section {
+      padding: 120px 0 60px 0;
+      margin-top: 80px; /* 네비게이션 높이 고려 */
+    }
+    
+    section h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      font-weight: 700;
+    }
+    
+    /* 2칼럼 레이아웃 */
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    
+    .portfolio-item {
+      margin-top: 2rem;
+      border: 1px solid #eee;
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    
+    .portfolio-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    
+    .portfolio-img {
+      position: relative;
+      height: 500px;
+      overflow: hidden;
+    }
+    
+    .portfolio-img img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      object-position: center;
+    }
+    
+    /* 이미지 아래에 캡션(제목) 배치 */
+    .info {
+      text-align: left;
+      padding: 10px;
+    }
+    
+    .info h3 {
+      font-size: 1rem;
+      margin: 0;
+      font-weight: bold;
+    }
+    
+    /* Footer */
+    footer {
+      background: #f9f9f9;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #777;
+      margin-top: 40px;
+    }
+    
+    /* 반응형 대응 */
+    @media (max-width: 768px) {
+      nav .container {
+        flex-direction: column;
+      }
+      
+      nav ul {
+        margin-top: 10px;
+      }
+      
+      .portfolio-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+
+  </style>
+</head>
+<body>
+  <!-- 네비게이션 -->
+  <nav>
+    <div class="container">
+      <div class="logo"><a href="portfolio.html">EllaLee</a></div>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <!-- Posters & Books 섹션 (2칼럼) -->
+  <section id="posters-books">
+    <div class="container">
+      <h2>UX/UI</h2>
+      <div class="portfolio-grid">
+        <!-- 왼쪽 아이템: Posters -->
+        <div class="portfolio-item">
+          <a href="Episode.html">
+            <div class="portfolio-img">
+              <img src="Images/group2.png" alt="Episode">
+            </div>
+          </a>
+          <div class="info">
+            <h3>EPISODE</h3>
+          </div>
+        </div>
+        <!-- 오른쪽 아이템: Books -->
+        <div class="portfolio-item">
+          <a href="book1.html">
+            <div class="container">
+            </div>
+          </a>
+          <div class="info">
+            <h3></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      &copy; 2025 EllaLee. All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>

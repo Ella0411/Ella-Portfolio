@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About</title>
+  <!-- 구글 폰트 (Montserrat) 사용 -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+  <style>
+    /* 기본 리셋 */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Montserrat', sans-serif;
+      color: #333;
+      background: #fff;
+      line-height: 1.6;
+    }
+    
+    .container {
+      width: 90%;
+      max-width: 1800px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    /* 네비게이션 */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.9);
+      border-bottom: 1px solid #eee;
+      z-index: 100;
+    }
+    
+    nav .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 0;
+    }
+    
+    nav .logo a {
+      text-decoration: none;
+      color: black;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+    
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+    
+    nav ul li {
+      margin-left: 30px;
+    }
+    
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+    
+    nav ul li a:hover {
+      color: #f0a500;
+    }
+    
+    /* About Section */
+    section#about {
+      padding: 120px 0; /* 네비게이션 높이 감안 및 여백 확보 */
+      background: #fff;
+    }
+    
+    section#about h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      font-weight: 700;
+    }
+    
+    .about-content {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1rem;
+      line-height: 1.8;
+      text-align: center;
+      font-weight: bolder;
+    }
+    
+    .about-content img {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+    
+    /* Footer */
+    footer {
+      background: #f9f9f9;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #777;
+      margin-top: 40px;
+    }
+    
+    /* 반응형 대응 */
+    @media (max-width: 768px) {
+      nav .container {
+        flex-direction: column;
+      }
+      
+      nav ul {
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- 네비게이션 -->
+  <nav>
+    <div class="container">
+      <div class="logo"><a href="portfolio.html">EllaLee</a></div>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <!-- 프로필 이미지 (이미지 경로를 알맞게 수정) -->
+        <img src="Images/Profile.jpg" alt="EllaLee Profile">
+        <p>
+          I’m an UX/UI designer. I am grown up with a lifelong passion for drawing, handcrafting, <br>and design. Ever since I can remember, I’ve loved turning ideas into tangible creations—whether it’s sketching on paper or crafting digital experiences. I believe great design should be intuitive, enjoyable, and personal.
+          <br><br>
+          Feel free to reach out if you’d like to chat about design!
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      &copy; 2025 EllaLee. All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>

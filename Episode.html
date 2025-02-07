@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project Detail - Episode</title>
+  <!-- 구글 폰트 (Montserrat) 사용 -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+  <style>
+    /* 기본 리셋 */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: #fff;
+      color: #333;
+      line-height: 1.6;
+    }
+    
+    .container {
+      width: 90%;
+      max-width: 1800px;
+      margin: 0 auto;
+    }
+    
+    /* 네비게이션 */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.9);
+      border-bottom: 1px solid #eee;
+      z-index: 100;
+    }
+    
+    nav .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 0;
+    }
+    
+    nav .logo a {
+      text-decoration: none;
+      color: black;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+    
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+    
+    nav ul li {
+      margin-left: 30px;
+    }
+    
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+    
+    nav ul li a:hover {
+      color: #f0a500;
+    }
+    
+    /* Project Hero 섹션 */
+    header.project-hero {
+      margin-top: 80px; /* 네비게이션 높이 고려 */
+      background: #f8f8f8;
+      padding: 60px 0;
+      text-align: center;
+      align-items: center;
+    }
+    
+    header.project-hero h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+    
+    header.project-hero p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+    
+    header.project-hero img {
+      width: 60%;
+      height: auto;
+    }
+    
+    /* Project Content 영역 */
+    .project-content {
+      padding: 60px 0;
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    
+    
+    .project-description {
+      flex: 2;
+      min-width: 300px;
+    }
+    
+    .project-description h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    
+    .project-description p {
+      margin-bottom: 20px;
+    }
+    
+    .project-details {
+      flex: 1;
+      min-width: 250px;
+      background: #f9f9f9;
+      padding: 20px;
+      border: 1px solid #eee;
+      height: fit-content;
+      margin-top: 3em;
+    }
+    
+    .project-details h2 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+    
+    .project-details ul {
+      list-style: none;
+      line-height: 1.8;
+    }
+    
+    .project-details ul li strong {
+      display: inline-block;
+      width: 80px;
+    }
+    
+    /* Footer */
+    footer {
+      background: #f9f9f9;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #777;
+      margin-top: 40px;
+    }
+    
+    /* 반응형 대응 */
+    @media (max-width: 768px) {
+      nav .container {
+        flex-direction: column;
+      }
+      
+      nav ul {
+        margin-top: 10px;
+      }
+      
+      .project-content {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- 네비게이션 -->
+  <nav>
+    <div class="container">
+      <div class="logo"><a href="portfolio.html">EllaLee</a></div>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <!-- Project Hero 섹션 -->
+  <header class="project-hero">
+    <div class="container">
+      <h1>Episode</h1>
+      <p>#UXUI #Intuitive #NYC Guide</p>
+      <img src="Images/group2.png" alt="Project Hero Image">
+    </div>
+  </header>
+  
+  <!-- Project Content 영역 -->
+  <section class="project-content">
+    <div class="container">
+      <!-- 좌측: 작품 소개 -->
+      <div class="project-description">
+        <h2>About the Project</h2>
+        <p>
+          This project involves designing a <strong>travel guide app</strong> that curates key landmarks in New York, allowing users to explore the city easily and intuitively. <br><br>The app provides photos and location details for each destination. Additionally, it includes in-depth descriptions covering the history, <br>unique features, and reasons to visit each site, aiming to offer users a more <strong>immersive travel experience</strong> beyond simple information delivery.
+          <img src="Images/Episode.png" style="width: auto; height: 500px;"><br>
+          <strong>Key Features<br>
+  • Map Integration:</strong> View landmark locations on the map section and navigate directly using a map app.<br>
+  <strong>• Visual-Centric UI:</strong> Explore destinations intuitively through high-quality images.<br>
+  <strong>• Detailed Information:</strong> Access in-depth descriptions, including history, reasons to visit, and useful tips for each location.<br>
+  <strong>• Filter Function:</strong> Search for places based on specific categories of interest (e.g., culture, history, food, etc.).
+        </p>
+      </div>
+      <!-- 우측: 프로젝트 상세 정보 -->
+      <div class="project-details">
+        <h2>Project Details</h2>
+        <ul>
+          <li><strong>Date:</strong> October, 2024</li>
+          <li><strong>Role:</strong> Designer / Developer</li>
+          <li><strong>Tools:</strong> Photoshop, Illustrator, XD, etc.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      &copy; 2025 EllaLee. All rights reserved.
+    </div>
+  </footer>
+</body>
